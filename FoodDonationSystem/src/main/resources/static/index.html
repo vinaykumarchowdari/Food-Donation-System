@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="/login">Log In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>We Are Sharing Food</h1>
+        <p>Join us in reducing food waste and helping the community by donating food.</p>
+        <button class="button" onclick="learnMore()">Learn More</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Our mission is to reduce food waste by connecting donors with those in need. We believe in building a community where everyone has access to food, and no meal goes to waste.
+        </p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Sign Up</h3>
+                <p>Create an account and join our community.</p>
+            </div>
+            <div class="step">
+                <h3>2. Donate or Request</h3>
+                <p>Post details of available food or request help.</p>
+            </div>
+            <div class="step">
+                <h3>3. Connect & Share</h3>
+                <p>Connect with others and share resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Food Collection</li>
+            <li>Donation Matching</li>
+            <li>Community Events</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@fooddonationsystem.com">Amma@fooddonationsystem.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Donation System</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+	
+	<!-- Overlay Background -->
+	<div class="overlay" style="display: none;"></div>
+
+	<!-- Modal -->
+	<div class="modal" style="display: none;">
+	    <div class="modal-content">
+	        <span class="close-button" onclick="closeModal()">&times;</span>
+	        <h2>How You Can Contribute</h2>
+	        <p>Join our mission to reduce food waste by donating surplus food or volunteering with us. Together, we can make a difference!</p>
+	    </div>
+	</div>
+
+</body>
+</html>
